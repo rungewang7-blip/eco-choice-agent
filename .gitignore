@@ -218,3 +218,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# EcoChoice Agent
+.idea/
+.vscode/
+eco.db
+eco.db-journal
+eco.db-wal
+eco.db-shm
+eco-frontend/factors-f2-check.json
