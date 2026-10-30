@@ -1,6 +1,9 @@
+
 <script setup lang="ts">
 import { onMounted } from 'vue'
+import BenchmarkAdmin from './BenchmarkAdmin.vue'
 
+// Keep the existing F1 carbon factor API check.
 onMounted(async () => {
   try {
     const response = await fetch('http://127.0.0.1:8000/factors')
@@ -13,7 +16,5 @@ onMounted(async () => {
 </script>
 
 <template>
-  <h1>EcoChoice Frontend Demo</h1>
-  <p>Check browser console (F12) to view backend data.</p>
+  <BenchmarkAdmin />
 </template>
-

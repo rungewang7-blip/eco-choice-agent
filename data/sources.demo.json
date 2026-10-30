@@ -1,0 +1,82 @@
+{
+  "sources": [
+    {
+      "id": "csv",
+      "enabled": true,
+      "demo": true,
+      "url": "https://example.invalid/fixture",
+      "format": "csv",
+      "fixture": "sample.csv",
+      "json_path": [
+        "observations"
+      ],
+      "fields": {
+        "indicator": "indicator",
+        "value": "value",
+        "unit": "unit",
+        "year": "year",
+        "geography": "geography",
+        "population_basis": "population_basis",
+        "period": "period",
+        "statistic": "statistic",
+        "scope": "scope"
+      },
+      "metadata": {
+        "methodology_url": "https://example.invalid/method",
+        "license": "TEST ONLY"
+      }
+    },
+    {
+      "id": "html",
+      "enabled": true,
+      "demo": true,
+      "url": "https://example.invalid/fixture",
+      "format": "html",
+      "fixture": "sample.html",
+      "json_path": [
+        "observations"
+      ],
+      "fields": {
+        "indicator": "indicator",
+        "value": "value",
+        "unit": "unit",
+        "year": "year",
+        "geography": "geography",
+        "population_basis": "population_basis",
+        "period": "period",
+        "statistic": "statistic",
+        "scope": "scope"
+      },
+      "metadata": {
+        "methodology_url": "https://example.invalid/method",
+        "license": "TEST ONLY"
+      }
+    },
+    {
+      "id": "json",
+      "enabled": true,
+      "demo": true,
+      "url": "https://example.invalid/fixture",
+      "format": "json",
+      "fixture": "sample.json",
+      "json_path": [
+        "observations"
+      ],
+      "fields": {
+        "indicator": "indicator",
+        "value": "value",
+        "unit": "unit",
+        "year": "year",
+        "geography": "geography",
+        "population_basis": "population_basis",
+        "period": "period",
+        "statistic": "statistic",
+        "scope": "scope"
+      },
+      "metadata": {
+        "methodology_url": "https://example.invalid/method",
+        "license": "TEST ONLY"
+      }
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "status": "provisional",
+  "label": "Illustrative three-person Irish household resident; not a national average",
+  "factorVersion": "2026-10-f1",
+  "scenario": {
+    "inputs": {
+      "transportMode": "car",
+      "kmPerDay": 20,
+      "travelDays": 230,
+      "flightKm": 0,
+      "diet": "mixed",
+      "foodKgPerDay": 1,
+      "electricityKwh": 4513,
+      "heatingKwh": 12636,
+      "householdSize": 3,
+      "paperKg": 5
+    }
+  },
+  "sources": [
+    {
+      "url": "https://www.seai.ie/data-and-insights/seai-statistics/residential",
+      "note": "2022 dwelling energy: electricity 4513 kWh; non-electric 12636 kWh."
+    },
+    {
+      "url": "https://www.cso.ie/en/releasesandpublications/ep/p-cpsr/censusofpopulation2022-summaryresults/householdsizeandmaritalstatus/",
+      "note": "2022 mean household size 2.74. This illustrative scenario uses three people to satisfy the existing integer household input, not the national mean."
+    }
+  ],
+  "limitations": [
+    "National benchmark acceptance in Specification S7 remains unmet: representative travel, food, items and heating fuel mix have not been established.",
+    "CO2-only home energy proxies and global food/UK transport factors retain the limitations in data-sources.md.",
+    "An engine-derived annual reference value and engine parity verification are pending; no fabricated national total is published."
+  ],
+  "benchmarkVersion": "2026-10-f1-candidate",
+  "nationalBenchmarkReady": false,
+  "annualKgCO2e": null,
+  "assumptions": {
+    "transport": "One petrol car occupant, 20 km/day for 230 days/year; illustrative, not NTA statistics.",
+    "flight": "Zero passenger.km/year is a scenario choice, not a national mean.",
+    "food": "1 kg/day, 365 days; mass shares beef 0.1, chicken 0.1, tofu 0.1, rice 0.3, brassicas 0.4; illustrative basket, not a complete or nationally representative diet.",
+    "home": "2022 SEAI mean dwelling electricity 4513 kWh and non-electric energy 12636 kWh allocated equally to three assumed residents. All non-electric energy treated as GCV natural gas is a proxy, not the observed Irish fuel mix.",
+    "items": "5 kg primary paper per person/year is a scenario choice."
+  },
+  "comparison": {
+    "period": "year",
+    "basis": "per person",
+    "categories": [
+      "transport",
+      "food",
+      "home",
+      "items"
+    ],
+    "method": "Use scenario.inputs with the existing client engine and GET /factors?version=2026-10-f1. No separate backend calculation engine.",
+    "nationalComparisonAllowed": false
+  }
+}

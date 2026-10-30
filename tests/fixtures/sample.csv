@@ -1,0 +1,4 @@
+indicator,value,unit,year,geography,population_basis,period,statistic,scope
+fixture_travel,4200,km/person/year,2022,Ireland,person,year,mean,national
+fixture_electricity,3228,kWh/household/year,2022,Ireland,household,year,median,national
+fixture_unknown,5000,,2022,Ireland,person,year,mean,national

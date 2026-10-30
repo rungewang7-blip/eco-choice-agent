@@ -1,0 +1,13 @@
+id,category,activity,unit,kgCO2ePerUnit,source,sourceYear,sourceUrl,factorVersion
+car,transport,Petrol car (one occupant),km,0.16272,DESNZ 2025; direct emissions; UK proxy for Ireland,2025,https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2025,2026-10-f1
+bus,transport,Average local bus,passenger.km,0.10385,DESNZ 2025; direct emissions; UK proxy for Ireland,2025,https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2025,2026-10-f1
+rail,transport,National rail,passenger.km,0.03546,DESNZ 2025; direct emissions; UK proxy for Ireland,2025,https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2025,2026-10-f1
+flight,transport,Short-haul economy with radiative forcing,passenger.km,0.12576,DESNZ 2025; direct emissions; UK proxy for Ireland,2025,https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2025,2026-10-f1
+paper,items,New paper,kg,1.3450779,DESNZ 2025 material use; primary paper; tonnes divided by 1000,2025,https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2025,2026-10-f1
+electricity,home,Irish electricity (CO2 only proxy),kWh,0.1978,SEAI 2025 provisional; domestic generation and losses; excludes imported generation emissions,2025,https://www.seai.ie/data-and-insights/seai-statistics/conversion-factors,2026-10-f1
+gas,home,Natural gas GCV (CO2 only proxy),kWh,0.1835,SEAI 2025 provisional; combustion CO2 only,2025,https://www.seai.ie/data-and-insights/seai-statistics/conversion-factors,2026-10-f1
+beef,food,Beef (beef herd),kg,99.48,Poore and Nemecek 2018; global means processed by Our World in Data,2018,https://ourworldindata.org/grapher/ghg-per-kg-poore,2026-10-f1
+chicken,food,Poultry Meat,kg,9.87,Poore and Nemecek 2018; global means processed by Our World in Data,2018,https://ourworldindata.org/grapher/ghg-per-kg-poore,2026-10-f1
+tofu,food,Tofu,kg,3.16,Poore and Nemecek 2018; global means processed by Our World in Data,2018,https://ourworldindata.org/grapher/ghg-per-kg-poore,2026-10-f1
+rice,food,Rice,kg,4.45,Poore and Nemecek 2018; global means processed by Our World in Data,2018,https://ourworldindata.org/grapher/ghg-per-kg-poore,2026-10-f1
+vegetables,food,Brassicas,kg,0.51,Poore and Nemecek 2018; global means processed by Our World in Data,2018,https://ourworldindata.org/grapher/ghg-per-kg-poore,2026-10-f1
