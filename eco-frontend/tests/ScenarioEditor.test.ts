@@ -106,7 +106,7 @@ describe('F3 ScenarioEditor', () => {
     await addActivity(wrapper)
     await wrapper.find('input').setValue('2')
 
-    expect(wrapper.text()).toContain('200 kgCO₂e')
+    expect(wrapper.text()).toContain('198.96 kgCO₂e')
 
     wrapper.unmount()
   })
@@ -125,9 +125,9 @@ describe('F3 ScenarioEditor', () => {
 
     const result = wrapper.find('section').text()
 
-    expect(result).toContain('Total:')
-    expect(result).toContain('Food: 200 kgCO₂e')
-    expect(result).toContain('Transport: 1.0 kgCO₂e')
+expect(result).toContain('Total: 200 kgCO₂e')
+expect(result).toContain('Food: 198.96 kgCO₂e')
+expect(result).toContain('Transport: 1.04 kgCO₂e')
 
     wrapper.unmount()
   })

@@ -54,15 +54,15 @@ describe('F2 Precision Tests', () => {
     expect(result.totalKgCO2e).toBeCloseTo(198.96)
   })
 
-  // Test 2: Round only for display
-  it('formats beef emissions to 2 significant figures', () => {
-    expect(formatEmission(198.96)).toBe('200')
-  })
+// Test 2: Display beef emissions with 2 decimal places
+it('formats beef emissions to 2 decimal places', () => {
+  expect(formatEmission(198.96)).toBe('198.96')
+})
 
-  // Test 3: Preserve trailing zero
-  it('preserves trailing zero for 1.0', () => {
-    expect(formatEmission(1.0385)).toBe('1.0')
-  })
+// Test 3: Display transport emissions with 2 decimal places
+it('formats transport emissions to 2 decimal places', () => {
+  expect(formatEmission(1.0385)).toBe('1.04')
+})
 
   // Test 4: Format small values
   it('formats small emissions', () => {
@@ -71,7 +71,7 @@ describe('F2 Precision Tests', () => {
 
   // Test 5: Format paper emissions
   it('formats paper emissions', () => {
-    expect(formatEmission(1.3450779)).toBe('1.3')
+    expect(formatEmission(1.3450779)).toBe('1.35')
   })
 
   // Test 6: Handle zero
