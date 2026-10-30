@@ -71,7 +71,7 @@ describe('F3 ScenarioEditor', () => {
     expect(wrapper.text()).toContain('Add activity')
     expect(fetchMock).toHaveBeenCalledOnce()
     expect(fetchMock).toHaveBeenCalledWith(
-      'http://127.0.0.1:8000/factors'
+      '/factors'
     )
 
     wrapper.unmount()
@@ -179,7 +179,7 @@ describe('F3 ScenarioEditor', () => {
 
     expect(fetchMock).toHaveBeenCalledOnce()
     expect(fetchMock).toHaveBeenCalledWith(
-      'http://127.0.0.1:8000/factors'
+      '/factors'
     )
 
     wrapper.unmount()

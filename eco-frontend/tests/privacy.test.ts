@@ -39,7 +39,7 @@ describe('F2 Privacy Tests', () => {
 
       expect(mockFetch).toHaveBeenCalledTimes(1)
       expect(mockFetch).toHaveBeenCalledWith(
-        'http://127.0.0.1:8000/factors'
+       '/factors'
       )
     } finally {
       mockFetch.mockRestore()

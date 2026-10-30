@@ -50,7 +50,7 @@ describe('F1 and F2 Integration', () => {
 
       // Step 5: Check that the API uses GET
       expect(mockFetch).toHaveBeenCalledWith(
-        'http://127.0.0.1:8000/factors'
+        '/factors'
       )
 
       // Step 6: Check that only one request was made

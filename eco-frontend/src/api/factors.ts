@@ -2,7 +2,7 @@ import type { FactorsResponse } from '../engine/types'
 
 export async function getFactors(): Promise<FactorsResponse> {
 
-  const response = await fetch('http://127.0.0.1:8000/factors')
+  const response = await fetch('/factors')
 
   if (!response.ok) {
     throw new Error('Failed to load factors')

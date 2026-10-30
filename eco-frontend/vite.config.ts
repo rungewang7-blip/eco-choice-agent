@@ -2,13 +2,13 @@
 import vue from '@vitejs/plugin-vue'
 import { defineConfig } from 'vitest/config'
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [vue()],
 
-  // Keep the F1 admin API proxy
+  // Local development: proxy API requests to FastAPI
   server: {
     proxy: {
+      '/factors': 'http://127.0.0.1:8000',
       '/admin/benchmark/': 'http://127.0.0.1:8000'
     }
   },
